@@ -1,3 +1,6 @@
+language:
+  - node.js
+
 script:
   - echo "Deploying!"
 
