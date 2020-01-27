@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1> Summer Program Application Form</h1>
+    <main>
+
+        <nav>
+            <ul>
+                <li>
+                    <div>
+                        <a href="index.html"> Main Page</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <a href="image.html"> Photo Gallary</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="table_and_lists.html"> Schedule of the Program</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="externals.html"> Map of the sites</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <form oninput="result.value=parseInt(likeness.value)" method="POST" action="http://httpbin.org/post">
+            <fieldset>
+                <div class="fieldset_container">
+
+                    <legend>Personal Information</legend>
+                    <label for="name" tabindex="3" autofocus>
+                        Your Name:
+                        <input id="user_name" name="user_name" required maxlength="30">
+                    </label>
+                    <br>
+                    <label for="major" tabindex="1">
+                        Your Major:
+                        <input list="major_choice" id="major" name="major" pattern="[a-z|A-Z]*">
+                    </label>
+                    <br>
+
+                    <label for="email_addr" tabindex="2" autocomplete>
+                        Your email address:
+                        <input type="email" id="email_addr" name="email_addr">
+                    </label>
+                    <br>
+
+                    <label for="financial_aid">
+                        Upload your financial aid package here:
+                        <input type="file" id="financial_aid" name="financial_aid" multiple>
+                    </label>
+                    <br>
+
+                    <label for="grad_time">
+                        Your graduation time:
+                        <input type="month" id="grad_time" name="grad_time">
+                    </label>
+                    <br>
+
+                    <label for="lucky_num">
+                        Just as a reference, your lucky number:
+                        <input type="number" id="lucky_num" name="lucky_num" placeholder="13">
+                    </label>
+                    <br>
+
+                    <label for="tel_number">
+                        Your phone number:
+                        <input type="tel" id="tel_number" name="tel_number">
+                    </label>
+                    <br>
+
+                    <label for="motto">
+                        Your motto:
+                        <input type="text" id="motto" name="motto" title="motto" value="Start early, start often">
+                    </label>
+                    <br>
+
+                    <label for="cat_meme">
+                        Your favorite cat_meme url:
+                        <input type="url" id="cat_meme" name="cat_meme" disabled>
+                    </label>
+                    <br>
+
+                    <p>Which year are you?</p>
+                    <div id="radio_options">
+                        <input type="radio" id="freshman" name="year_of_study" value="freshman">
+                        <label for="freshman">Freshman</label>
+                        <input type="radio" id="sophomore" name="year_of_study" value="sophomore">
+                        <label for="sophomore">Sophomore</label>
+                        <input type="radio" id="junior" name="year_of_study" value="junior">
+                        <label for="junior">Junior</label>
+                        <input type="radio" id="senior" name="year_of_study" value="senior">
+                        <label for="senior">Senior</label>
+
+                    </div>
+
+                    <br>
+
+
+                    <label for="ucsd_stu">
+                        Are you a UCSD student?
+                        <input id="ucsd_stu" name="ucsd_stu" type=checkbox checked>
+                    </label>
+                    <label></label>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset_container">
+                    <legend>Program Information</legend>
+                    <label for="shirt_color">
+                        Choose a color for your free T-shirt in this program:
+                        <input type="color" name="shirt_color" id="shirt_color">
+                    </label>
+                    <br>
+
+                    <label for="flight_date">
+                        Your departure date to Italy:
+                        <input type="date" name="flight_date" id="flight_date">
+                    </label>
+                    <br>
+
+                    <label for="flight_time">
+                        Your departure time to Italy:
+                        <input type="time" name="flight_time" id="flight_time">
+                    </label>
+                    <br>
+
+                    <label for="fav_place">
+                        One site that you are looking forward to:
+                        <select>
+                            <optgroup label="Sicily">
+                                <option>Mount Etna</option>
+                                <option>Villa Romana Del Castle</option>
+                                <option>Greek Theater of Syrecusa</option>
+                            </optgroup>
+                            <optgroup label="Napoli">
+                                <option>Under ground tour</option>
+                                <option>Museum of Napoli</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                    <br>
+
+                    <label for="likeness">
+                        How much are you looking forward to this program (from 1 to 10):
+                        <input type="range" min="1" max="10" name="likeness" id="likeness" list="tickmarks">
+                    </label>
+                    <br>
+
+                    <p style="display:inline"> Your input is: </p>
+                    <output name="result">
+                        6
+                    </output>
+
+                    <p> Type your statement of purpose here:</p>
+                    <textarea></textarea>
+                    <br>
+
+
+                    <button value=Submit>Submit</button>
+                    <input type="reset">
+
+
+                </div>
+
+            </fieldset>
+            <datalist id="major_choice">
+                <option value="Math"></option>
+                <option value="CS"></option>
+                <option value="ICAM"></option>
+                <option value="Music"></option>
+            </datalist>
+
+            <datalist id="tickmarks">
+                <option value="1" label="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5" label="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10" label="10"></option>
+            </datalist>
+        </form>
+    </main>
+
+</body>
+
+</html>

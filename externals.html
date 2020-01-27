@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="externals.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+        integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1> External Links </h1>
+        <nav>
+            <ul>
+                <li>
+                    <div>
+                        <a href="image.html" class="pure-button"> Photo Gallary</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="form.html" class="pure-button"> Application Form</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="table_and_lists.html" class="pure-button"> Schedule of the Program</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="index.html" class="pure-button"> Main Page</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Wikipedia page on Sardinia and Sicily</h1>
+        <iframe src="https://en.wikipedia.org/wiki/Sardinia"></iframe>
+        <iframe src="https://en.wikipedia.org/wiki/Sicily"></iframe>
+
+        <h1>Things to do in Sardinia</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ccX5wmxAL7A" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h1> Some picture of Sicily and Sardinia</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Mt_Etna_and_Catania1.jpg" alt="Mount Etna">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Papiro-Ciane.jpg" alt="River">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Veduta-Vallone-Caltanissetta.jpg">
+
+        <script src="https://cdn.rawgit.com/dmauro/Keypress/master/keypress.js" type="module">
+            var listener = new window.keypress.Listener();
+            listener.simple_combo("a s", function () {
+                console.log("You pressed shift and s");
+            })
+        </script>
+
+        <script
+            src="http://gist-it.appspot.com/https://github.com/kaylynhan/asapp/blob/master/client/public/index.html"></script>
+        <section>
+            <h1>Resources to look at</h1>
+            <ol>
+                <li>
+                    <a
+                        href="http://anthro.ucsd.edu/graduate-studies/program-requirements/anthro-archaeology/index.html">UCSD
+                        anthro-archaeology Program</a>
+                </li>
+                <li>
+                    <a href="https://studyabroad.ucsd.edu/"> UCSD Study Abroad Office</a>
+                </li>
+                <li>
+                    <a href="http://www.visitsicily.info/en/">Visit Sicily!</a>
+                </li>
+                <li>
+                    <a href="http://www.italyheaven.co.uk/sicily/erice.html">One of the most Beautiful town in the
+                        world!</a>
+                </li>
+                <li>
+                    <a href="http://pompeiisites.org/en/">Visit Pompeii!</a>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

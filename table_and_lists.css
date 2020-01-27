@@ -1,0 +1,36 @@
+#main_title{
+    text-align:center;
+}
+td{
+    border:black solid 1px;
+    width:150px;
+    height:30px;
+    
+}
+
+table{
+    margin:auto;
+    margin-top:50px;
+    border-collapse:collapse;
+}
+
+
+th{
+    border:black 5px;
+    background-color:white !important;
+}
+
+
+
+nav > ul{
+    list-style: none;
+    display:flex;
+    margin:50px auto;
+    justify-content: space-evenly;
+
+}
+
+nav > ul > *{
+    flex-grow:1;
+    text-justify:center;
+}

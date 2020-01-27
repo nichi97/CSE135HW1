@@ -1,0 +1,26 @@
+textarea{
+    width:400px;
+    height:600px;
+}
+
+h1{
+    text-align:center;
+}
+.fieldset_container > *{
+    display:block;
+    margin-top:1px;
+    margin-bottom:1px;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    margin:50px auto;
+    justify-content: space-evenly;
+
+}
+
+ul > *{
+    flex-grow:1;
+    text-justify:center;
+}

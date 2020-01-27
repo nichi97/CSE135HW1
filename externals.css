@@ -1,0 +1,32 @@
+iframe{
+    width:500px;
+    height:500px;
+}
+
+img{
+    width:500px;
+    height:500px;
+}
+
+
+ul{
+    list-style: none;
+    display:flex;
+    margin:50px auto;
+    justify-content: space-evenly;
+
+}
+
+ul > *{
+    flex-grow:1;
+    text-justify:center;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+
+
+h1{
+    text-align:center;
+    font-family: 'Bowlby One SC', cursive;
+}
